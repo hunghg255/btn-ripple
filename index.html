@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="btnRipple.min.css">
+	<script defer src="btnRipple.min.js"></script>
+	<style type="text/css">
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: sans-serif;
+      background-color: #dde;
+    }
+		button {
+			width: 200px;
+			height: 50px;
+			outline: none;
+			background-color: dodgerblue;
+			outline: none;
+			color: white;
+			border: none;
+      margin: 20px;
+      border-radius: 8px;
+      font-size: 1em;
+		}
+	</style>
+</head>
+
+<body>
+  <h1>Button Ripple Demo</h1>
+	<button class="ripple">Click</button>
+  <button class="ripple ripple-mousemove">Click And Mouse move</button>
+  <button class="ripple" ripple-color="yellow">Change Color</button>
+</body>
+</html>
