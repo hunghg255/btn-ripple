@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  background: dodgerblue;
+  width: 200px;
+  height: 70px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  box-shadow: 2px 5px 2px rgba(0,0,0,.4);
+  
+  
+  margin: 30px;
+}
+.ripple, .ripple-mousemove {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mask {
+  position:absolute;
+  width: 10px;
+  height: 10px;
+  top:0;
+  left:0;
+  border-radius: 50%;
+  background: rgba(255,255,255,.3);
+  transform: scale(0);
+  animation: ripple 1s both linear;
+  -o-animation: ripple 1s both linear;
+  -moz-animation: ripple 1s both linear;
+  -webkit-animation: ripple 1s both linear;
+}
+
+@keyframes ripple {
+  to {transform: scale(50); opacity: 0;}
+}
+
+@-o-keyframes ripple{
+  to {transform: scale(50); opacity: 0;}
+}
+
+@-moz-keyframes ripple{
+  to {transform: scale(50); opacity: 0;}
+}
+
+@-webkit-keyframes ripple {
+  to {transform: scale(50); opacity: 0;}
+}
