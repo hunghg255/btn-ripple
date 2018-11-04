@@ -12,7 +12,7 @@ File thứ 1: `btnRipple.css` hoặc `btnRipple.min.css`
 
 File thứ 2: `btnRipple.js` hoặc `btnRipple.min.js`
 ## Nếu bạn không muốn tải file thì có thể dùng link CDN
-Bạn chỉ cần thêm 2 link này vào phần <head></head> là được
+Bạn chỉ cần thêm 2 link này vào phần `<head></head>` là được
 
 `<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/giahungbk/btn-ripple/btnRipple.min.css">`
 `<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/giahungbk/btn-ripple/btnRipple.min.js"></script>`
