@@ -1,9 +1,9 @@
-# R.Touch
+# Button ripple
 Thư viện hỗ trợ tạo hiệu ứng sóng nước cho các phần tử được click trong HTML. 
 
 
 ## Live Demo
-Bạn có thể thử nghiệm hiệu ứng sóng nước [test ripple](https://giahungbk.github.io/btn-ripple/)
+Bạn có thể thử nghiệm hiệu ứng sóng nước [Test ripple](https://giahungbk.github.io/btn-ripple/)
 
 ## Installation
 Bạn cần dẫn đủ **02** file thư viện của chúng tôi vào file HTML của bạn.
@@ -11,7 +11,10 @@ Bạn cần dẫn đủ **02** file thư viện của chúng tôi vào file HTML
 File thứ 1: `btnRipple.css` hoặc `btnRipple.min.css`
 
 File thứ 2: `btnRipple.js` hoặc `btnRipple.min.js`
-
+## Nếu bạn không muốn tải file thì có thể dùng link CDN
+Bạn chỉ cần thêm 2 link này vào phần <head></head> là được
+`<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/giahungbk/btn-ripple/btnRipple.min.css">`
+`<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/giahungbk/btn-ripple/btnRipple.min.js"></script>`
 
 ## Hướng dẫn sử dụng
 Các phần tử có thể được áp dụng sự kiện `click` đều có thể áp dụng hiệu ứng sóng nước.
