@@ -3,7 +3,7 @@ Thư viện hỗ trợ tạo hiệu ứng sóng nước cho các phần tử đ�
 
 
 ## Live Demo
-Bạn có thể thử nghiệm hiệu ứng sóng nước [Test ripple](https://giahungbk.github.io/btn-ripple/)
+Bạn có thể thử nghiệm hiệu ứng sóng nước [Test ripple](https://hunghg255.github.io/btn-ripple/)
 
 ## Installation
 Bạn cần dẫn đủ **02** file thư viện của chúng tôi vào file HTML của bạn.
@@ -35,5 +35,3 @@ Ví dụ: `<button class="ripple-mousemove">Mouse move</button>`
 Bạn có thể chủ động thay đổi màu sắc của sóng nước bằng cách thêm thuộc tính `ripple-color` kèm theo giá trị màu.
 
 Ví dụ: `<button class="ripple" ripple-color="#fff">Click Me</button>`
-
-**Đây là sản phẩm mang tính chất học tập được viết bởi thành viên của cộng đồng [Coders.tokyo](https://coders.tokyo)**
