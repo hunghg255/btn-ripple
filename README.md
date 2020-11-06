@@ -1,5 +1,5 @@
 # Button ripple
-Thư viện hỗ trợ tạo hiệu ứng sóng nước cho các phần tử được click trong HTML. 
+Thư viện hỗ trợ tạo hiệu ứng sóng nước cho các phần tử được click trong HTML.
 
 
 ## Live Demo
@@ -14,8 +14,8 @@ File thứ 2: `btnRipple.js` hoặc `btnRipple.min.js`
 ## Nếu bạn không muốn tải file thì có thể dùng link CDN
 Bạn chỉ cần thêm 2 link này vào phần `<head></head>` là được
 
-`<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/hunghg255/btn-ripple/btnRipple.min.css">`
-`<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/hunghg255/btn-ripple/btnRipple.min.js"></script>`
+`<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/hunghg255/btn-ripple@v1.0/btnRipple.min.css">`
+`<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/hunghg255/btn-ripple@v1.0/btnRipple.min.js"></script>`
 
 ## Hướng dẫn sử dụng
 Các phần tử có thể được áp dụng sự kiện `click` đều có thể áp dụng hiệu ứng sóng nước.
