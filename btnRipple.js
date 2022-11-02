@@ -1,37 +1,42 @@
-document.addEventListener('DOMContentLoaded', function(){
-  let rippleClick = document.querySelectorAll('.ripple');
-  let rippleMousemove = document.querySelectorAll('.ripple-mousemove');
-  var hover = true;
+document.addEventListener('DOMContentLoaded', function () {
+  const rippleClick = document.querySelectorAll('.ripple');
+  const rippleMousemove = document.querySelectorAll('.ripple-mousemove');
+  let hover = true;
 
   function createRipple(btn, e, color) {
-    let maskDiv = document.createElement('div');
-    let x = e.clientX  - btn.offsetLeft;
-    let y = e.clientY - btn.offsetTop;
+    const maskDiv = document.createElement('div');
+    const x = e.clientX - btn.offsetLeft;
+    const y = e.clientY - btn.offsetTop;
     maskDiv.classList.add('mask');
     maskDiv.style.top = y + 'px';
     maskDiv.style.left = x + 'px';
-    if(color) maskDiv.style.background = color;
+    if (color) maskDiv.style.background = color;
     btn.appendChild(maskDiv);
-    setTimeout(() => {maskDiv.remove();}, 1000);
+    const t = setTimeout(() => {
+      maskDiv.remove();
+      clearTimeout(t);
+    }, 1000);
   }
 
   if (rippleClick) {
-    for(x of rippleClick) {
-      x.addEventListener('click', function(event){
+    for (x of rippleClick) {
+      x.addEventListener('click', function (event) {
         createRipple(this, event, this.getAttribute('ripple-color'));
       });
     }
   }
 
   if (rippleMousemove) {
-    for(x of rippleMousemove) {
-      x.addEventListener("mousemove",function(event){
-        if(hover){
+    for (x of rippleMousemove) {
+      x.addEventListener('mousemove', function (event) {
+        if (hover) {
           hover = false;
-          createRipple(this, event,  this.getAttribute('ripple-color'));
-          setTimeout(() => {hover=true},100);
+          createRipple(this, event, this.getAttribute('ripple-color'));
+          setTimeout(() => {
+            hover = true;
+          }, 100);
         }
       });
     }
-  }                         
+  }
 });
